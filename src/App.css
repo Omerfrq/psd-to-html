@@ -7,3 +7,13 @@ body {
 .bg-yellow {
   background-color: #ebff00 !important;
 }
+
+.icon-box {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}

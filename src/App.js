@@ -6,10 +6,12 @@ import './App.css';
 import Data from './pages/data/data';
 import Navigation from './components/navigation/navigation';
 import Home from './pages/home/home';
+import Header from './components/header/header';
 
 function App() {
   return (
     <div className='App'>
+      <Header />
       <Navigation />
       <Switch>
         <Route exact path='/' component={Home} />
