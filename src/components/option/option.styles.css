@@ -1,0 +1,11 @@
+.option-link {
+  color: #000;
+  transition: all 0.2s ease-in;
+}
+
+.option-link:hover,
+.option-link svg:hover {
+  color: #000000a6;
+  fill: #000000a6;
+  text-decoration: none;
+}
