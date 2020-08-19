@@ -40,7 +40,7 @@ const OptionOne = () => {
           md={12}
           className='py-5 d-flex align-items-center justify-content-center'
         >
-          <span className='bg-dark badge badge-pill text-white p-2 mr-3'>
+          <span className='bg-grey-light badge badge-pill text-white p-3 mr-3'>
             <FilesIcon height={30} color='currentColor' />
           </span>
           <h3>Option 1 Name</h3>
@@ -52,7 +52,7 @@ const OptionOne = () => {
             className='border p-3 d-flex align-items-center justify-content-between'
             onClick={openCreateNew}
           >
-            <CheckBox text='create new' />
+            <CheckBox text='create new' checked={show} />
             <span>
               <FilesIcon height={50} color='currentColor' />
             </span>
@@ -65,7 +65,7 @@ const OptionOne = () => {
             className='border p-3 d-flex align-items-center justify-content-between'
             onClick={openManageExisting}
           >
-            <CheckBox text='Manage Existing' />
+            <CheckBox text='Manage Existing' checked={showManageExisting} />
             <span>
               <FilesIcon height={50} color='currentColor' />
             </span>
