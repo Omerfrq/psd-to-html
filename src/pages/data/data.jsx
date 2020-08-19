@@ -16,19 +16,19 @@ const Data = () => {
       </h2>
       <Row className='justify-content-around my-5 mx-5'>
         <Option text='option 1' to='/option-one'>
-          <FilesIcon height={90} color='currentColor' />
+          <FilesIcon height={65} color='currentColor' />
         </Option>
         <Option text='option 2'>
-          <FilesIcon height={90} color='currentColor' />
+          <FilesIcon height={65} color='currentColor' />
         </Option>
         <Option text='option 3'>
-          <FilesIcon height={90} color='currentColor' />
+          <FilesIcon height={65} color='currentColor' />
         </Option>
         <Option text='option 4'>
-          <FilesIcon height={90} color='currentColor' />
+          <FilesIcon height={65} color='currentColor' />
         </Option>
         <Option text='option 5'>
-          <FilesIcon height={90} color='currentColor' />
+          <FilesIcon height={65} color='currentColor' />
         </Option>
       </Row>
     </div>
