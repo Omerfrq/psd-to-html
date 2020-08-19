@@ -18,7 +18,7 @@ const Navigation = () => {
       //   onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
     >
       <Nav.Item>
-        <Nav.Link as={Link} to='/'>
+        <Nav.Link as={Link} to='/' className='py-3'>
           <div className='icon-box nav-icon-color'>
             <AccountIcon color='currentColor' height={25} />
           </div>
@@ -27,7 +27,7 @@ const Navigation = () => {
         </Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link as={Link} to='/data'>
+        <Nav.Link as={Link} to='/data' className='py-3'>
           <div className='icon-box nav-icon-color'>
             <DataIcon color='currentColor' height={25} />
           </div>
@@ -36,7 +36,7 @@ const Navigation = () => {
         </Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link as={Link} to='/'>
+        <Nav.Link as={Link} to='/' className='py-3'>
           <div className='icon-box nav-icon-color'>
             <TempleteIcon color='currentColor' height={25} />
           </div>
@@ -45,7 +45,7 @@ const Navigation = () => {
         </Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link as={Link} to='/'>
+        <Nav.Link as={Link} to='/' className='py-3'>
           <div className='icon-box nav-icon-color'>
             <ResultIcon color='currentColor' height={25} />
           </div>
@@ -54,7 +54,7 @@ const Navigation = () => {
         </Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link as={Link} to='/'>
+        <Nav.Link as={Link} to='/' className='py-3'>
           <div className='icon-box nav-icon-color'>
             <AlertIcon color='currentColor' height={25} />
           </div>

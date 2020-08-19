@@ -1,0 +1,22 @@
+.items-box {
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  overflow: auto;
+}
+
+.items-box button {
+  font-size: 13px;
+}
+
+.items-box button:nth-child(odd) {
+  background: white;
+}
+
+.items-box button:nth-child(even) {
+  background: #eee;
+}
+
+.lines {
+  letter-spacing: -4px;
+}

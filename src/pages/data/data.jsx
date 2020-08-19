@@ -15,7 +15,7 @@ const Data = () => {
         Select A Data Type to Manage
       </h2>
       <Row className='justify-content-around my-5 mx-5'>
-        <Option text='option 1'>
+        <Option text='option 1' to='/option-one'>
           <FilesIcon height={70} color='currentColor' />
         </Option>
         <Option text='option 2'>
