@@ -9,7 +9,7 @@ const ItemsBox = () => {
   return (
     <Col
       md={6}
-      className='d-flex flex-column align-items-center py-5 bg-yellow-light'
+      className='d-flex flex-column align-items-center py-5  bg-yellow-light'
     >
       <h6 className='text-muted font-weight-bold text-capitalize'>
         Double click any item to add
@@ -48,13 +48,24 @@ const ItemsBox = () => {
           </Form.Control>
         </Form.Group>
         <Form.Group as={Col} md='3'>
-          <Form.Control className='rounded' type='number' required />
+          <Form.Control
+            isInvalid
+            className='rounded mt-4'
+            type='number'
+            required
+          />
           <Form.Control.Feedback type='invalid'>
             <small className='text-nowrap'>A value must be entered</small>
           </Form.Control.Feedback>
         </Form.Group>
         <Form.Group as={Col} md='3'>
-          <Form.Control className='rounded' type='number' required />
+          <Form.Control
+            isValid
+            defaultValue={23}
+            className='rounded '
+            type='number'
+            required
+          />
           <Form.Control.Feedback type='invalid'>
             <small className='text-nowrap'>A value must be entered</small>
           </Form.Control.Feedback>

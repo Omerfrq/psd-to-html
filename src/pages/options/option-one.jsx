@@ -67,7 +67,12 @@ const OptionOne = () => {
         </Col>
       </Row>
       <Modal show={show} onHide={handleClose}>
-        <Form noValidate validated={validated} onSubmit={handleSubmit}>
+        <Form
+          className='p-3'
+          // noValidate
+          // validated={validated}
+          onSubmit={handleSubmit}
+        >
           <OptionHeader>
             <FilesIcon height={50} color='currentColor' />
           </OptionHeader>
