@@ -72,14 +72,10 @@ const OptionOne = () => {
             <FilesIcon height={50} color='currentColor' />
           </OptionHeader>
 
-          <Modal.Body className='px-0'>
-            <div className='contact-header text-capitalize bg-yellow d-flex justify-content-around py-4'>
-              <h2 className='mb-0'>Left Side</h2>
-              <h2 className='mb-0'>right Side</h2>
-            </div>
+          <Modal.Body className='px-0 pb-0'>
             <Row className='mx-0 justify-content-around'>
-              <ItemsBox />
-              <ItemsBox />
+              <ItemsBox title='left side' />
+              <ItemsBox title='Right side' />
             </Row>
           </Modal.Body>
           <Modal.Footer>

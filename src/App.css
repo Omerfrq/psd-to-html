@@ -53,6 +53,10 @@ input[type='checkbox'] {
   margin-bottom: 0;
 }
 
+.w-130px {
+  width: 130px;
+}
+
 /* Scroll Box */
 
 .scrollbox {

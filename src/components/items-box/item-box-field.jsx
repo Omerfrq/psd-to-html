@@ -10,13 +10,15 @@ const ItemBoxField = ({ children }) => {
       <span className='lines mr-2'>|||</span>
       <Form.Group>
         <Form.Check
-          className='small mr-3'
+          className='small'
           required
           label='Any text 123123'
           feedback='You must agree before submitting.'
         />
       </Form.Group>
-      <QuestionCircle height={15} color='#888' />
+      <span className='mx-3'>
+        <QuestionCircle height={15} color='#888' />
+      </span>
       {children}
     </Form.Row>
   );

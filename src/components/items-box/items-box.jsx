@@ -2,19 +2,20 @@ import React from 'react';
 import './items-box.styles.css';
 import { Col, Form } from 'react-bootstrap';
 import ItemBoxChildren from './item-box-children';
-import QuestionCircle from '../../assets/svgs/question-circle';
 import ItemBoxField from './item-box-field';
+import ItemBoxTitle from './item-box-title';
 
-const ItemsBox = () => {
+const ItemsBox = ({ title }) => {
   return (
     <Col
       md={6}
-      className='d-flex flex-column align-items-center py-5 bg-yellow-light'
+      className='d-flex flex-column align-items-center  bg-yellow-light'
     >
+      <ItemBoxTitle title={title} />
       <h6 className='text-muted font-weight-bold text-capitalize'>
         Double click any item to add
       </h6>
-      <div className='w-50 border border-dark rounded pr-1 py-2 mb-5'>
+      <div className='col col-md-6 flex-fill border border-dark rounded pr-1 py-2 mb-5'>
         <div className='items-box scrollbox bg-white'>
           <ItemBoxChildren text='Option 2 - text 12334' />
           <ItemBoxChildren text='Option 2 - text 12334' />
@@ -34,10 +35,10 @@ const ItemsBox = () => {
         </div>
       </div>
       <ItemBoxField>
-        <Form.Group as={Col}>
+        <Form.Group className='mb-3 mr-3'>
           <Form.Control
             as='select'
-            className='my-1 mr-sm-2'
+            className='w-130px'
             id='inlineFormCustomSelectPref'
             custom
           >
@@ -47,13 +48,13 @@ const ItemsBox = () => {
             <option value='3'>Three</option>
           </Form.Control>
         </Form.Group>
-        <Form.Group as={Col} md='3'>
+        <Form.Group as={Col} xs={5} md={3} className='px-0 mb-3 mr-3'>
           <Form.Control className='rounded' type='number' required />
           <Form.Control.Feedback type='invalid'>
             <small className='text-nowrap'>A value must be entered</small>
           </Form.Control.Feedback>
         </Form.Group>
-        <Form.Group as={Col} md='3'>
+        <Form.Group as={Col} xs={5} md={3} className='px-0 mb-3 mr-3'>
           <Form.Control className='rounded' type='number' required />
           <Form.Control.Feedback type='invalid'>
             <small className='text-nowrap'>A value must be entered</small>
@@ -61,10 +62,10 @@ const ItemsBox = () => {
         </Form.Group>
       </ItemBoxField>
       <ItemBoxField>
-        <Form.Group as={Col}>
+        <Form.Group className='mb-3 mr-3'>
           <Form.Control
             as='select'
-            className='my-1 mr-sm-2'
+            className='w-130px'
             id='inlineFormCustomSelectPref'
             custom
           >
@@ -76,10 +77,10 @@ const ItemsBox = () => {
         </Form.Group>
       </ItemBoxField>
       <ItemBoxField>
-        <Form.Group as={Col}>
+        <Form.Group className='mb-3 mr-3'>
           <Form.Control
             as='select'
-            className='my-1 mr-sm-2'
+            className='w-130px'
             id='inlineFormCustomSelectPref'
             custom
           >
@@ -89,7 +90,7 @@ const ItemsBox = () => {
             <option value='3'>Three</option>
           </Form.Control>
         </Form.Group>
-        <Form.Group as={Col} md='3'>
+        <Form.Group as={Col} xs={5} md={3} className='px-0 mb-3 mr-3'>
           <Form.Control className='rounded' type='number' required />
           <Form.Control.Feedback type='invalid'>
             <small className='text-nowrap'>A value must be entered</small>
@@ -97,10 +98,10 @@ const ItemsBox = () => {
         </Form.Group>
       </ItemBoxField>
       <ItemBoxField>
-        <Form.Group as={Col}>
+        <Form.Group className='mb-3 mr-3'>
           <Form.Control
             as='select'
-            className='my-1 mr-sm-2'
+            className='w-130px'
             id='inlineFormCustomSelectPref'
             custom
           >
