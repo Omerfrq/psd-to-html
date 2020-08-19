@@ -3,14 +3,6 @@ import './manage-existing.styles.css';
 import { Button, Modal, Form, Table, Col, Pagination } from 'react-bootstrap';
 import TableRow from './table-row';
 
-const tabletitle = [
-  'Row',
-  'records count',
-  'saved name',
-  'created date time',
-  'last updated date time',
-];
-
 const ManageExisting = ({ show, onHide, onSubmit }) => {
   return (
     <Modal show={show} onHide={onHide}>
@@ -19,7 +11,7 @@ const ManageExisting = ({ show, onHide, onSubmit }) => {
           Manage Existing
         </h2>
 
-        <Modal.Body className='px-0 pb-0'>
+        <Modal.Body className='px-0 pb-0 '>
           <Table bordered hover responsive>
             <thead className='bg-light text-black-50 text-uppercase small'>
               <tr>
@@ -29,16 +21,16 @@ const ManageExisting = ({ show, onHide, onSubmit }) => {
                     <Button
                       variant='warning'
                       size='sm'
-                      className='align-top p-0'
+                      className='align-top p-0 bg-muted '
                     >
-                      <h6 className='mb-0'>&times;</h6>
+                      <h6 className='mb-0 text-muted bg-light'>&times;</h6>
                     </Button>
                     <Button
                       variant='warning'
                       size='sm'
                       className='align-top p-0'
                     >
-                      <small className='mb-0'>▼</small>
+                      <small className='mb-0 text-muted bg-light'>▼</small>
                     </Button>
                   </span>
                 </th>
@@ -50,14 +42,14 @@ const ManageExisting = ({ show, onHide, onSubmit }) => {
                       size='sm'
                       className='align-top p-0'
                     >
-                      <h6 className='mb-0'>&times;</h6>
+                      <h6 className='mb-0 text-muted bg-light'>&times;</h6>
                     </Button>
                     <Button
                       variant='warning'
                       size='sm'
                       className='align-top p-0'
                     >
-                      <small className='mb-0'>▼</small>
+                      <small className='mb-0 text-muted bg-light'>▼</small>
                     </Button>
                   </span>
                 </th>
@@ -69,14 +61,14 @@ const ManageExisting = ({ show, onHide, onSubmit }) => {
                       size='sm'
                       className='align-top p-0'
                     >
-                      <h6 className='mb-0'>&times;</h6>
+                      <h6 className='mb-0 text-muted bg-light'>&times;</h6>
                     </Button>
                     <Button
                       variant='warning'
                       size='sm'
                       className='align-top p-0'
                     >
-                      <small className='mb-0'>▼</small>
+                      <small className='mb-0 text-muted bg-light'>▼</small>
                     </Button>
                   </span>
                 </th>
@@ -88,14 +80,14 @@ const ManageExisting = ({ show, onHide, onSubmit }) => {
                       size='sm'
                       className='align-top p-0'
                     >
-                      <h6 className='mb-0'>&times;</h6>
+                      <h6 className='mb-0 text-muted bg-light'>&times;</h6>
                     </Button>
                     <Button
                       variant='warning'
                       size='sm'
                       className='align-top p-0'
                     >
-                      <small className='mb-0'>▼</small>
+                      <small className='mb-0 text-muted bg-light'>▼</small>
                     </Button>
                   </span>
                 </th>
@@ -107,14 +99,14 @@ const ManageExisting = ({ show, onHide, onSubmit }) => {
                       size='sm'
                       className='align-top p-0'
                     >
-                      <h6 className='mb-0'>&times;</h6>
+                      <h6 className='mb-0 text-muted bg-light'>&times;</h6>
                     </Button>
                     <Button
                       variant='warning'
                       size='sm'
                       className='align-top p-0'
                     >
-                      <small className='mb-0'>▼</small>
+                      <small className='mb-0 text-muted bg-light'>▼</small>
                     </Button>
                   </span>
                 </th>
@@ -135,9 +127,11 @@ const ManageExisting = ({ show, onHide, onSubmit }) => {
         <Modal.Footer className='border-0'>
           <Form.Row className='w-100 align-items-center mx-0'>
             <Col sm={2} className='my-1'>
-              <Form.Group className='row mx-0 align-items-center'>
+              <Form.Group className='d-flex align-items-end'>
                 <Form.Control className='col-3' type='text' value='10' />
-                <Form.Label className='col'>rows per page</Form.Label>
+                <Form.Label className='col small font-weight-600 color-heading'>
+                  Rows Per Page
+                </Form.Label>
               </Form.Group>
             </Col>
 

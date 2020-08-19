@@ -12,6 +12,16 @@
   font-family: 'Dejavubold' !important;
 }
 
+.close {
+  border-radius: 50%;
+  background-color: #fbe7e8;
+  padding: 3px;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
 .heading-color {
   color: #312d4e !important;
 }

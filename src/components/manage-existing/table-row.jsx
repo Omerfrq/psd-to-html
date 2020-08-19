@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap';
 
 const TableRow = () => {
   return (
-    <tr>
+    <tr className='font-weight-600'>
       <td>1</td>
       <td className='text-green'>1234</td>
       <td>
@@ -16,17 +16,13 @@ const TableRow = () => {
           <Button
             variant='warning'
             size='sm'
-            className='rounded-pill pb-1 pt-0 px-2'
+            className='rounded-pill pb-1 pt-0 px-2 text-capitalize '
           >
-            <small>Click to view/update</small>
+            Click to view/update
           </Button>
-          <Button
-            variant='outline-danger'
-            size='sm'
-            className='rounded-pill pb-1 pt-0 px-2'
-          >
-            <h5 className='mb-0'>&times;</h5>
-          </Button>
+          <div className='close'>
+            <small className='text-danger'>&times;</small>
+          </div>
         </span>
       </td>
     </tr>
