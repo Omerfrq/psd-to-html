@@ -1,7 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@font-face {
+  font-family: Dejavu;
+  src: url(../src/dejavu-sans/DejaVuSans.ttf);
+}
+
+@font-face {
+  font-family: Dejavubold;
+  src: url(../src/dejavu-sans/DejaVuSans-Bold.ttf);
+}
+
+.font-bold {
+  font-family: 'Dejavubold' !important;
+}
+
+.heading-color {
+  color: #312d4e !important;
+}
+
+.bg-custom-success {
+  background: #549f10;
+}
 
 body {
-  font-family: 'Alata', sans-serif;
+  font-family: 'Dejavu', sans-serif;
 }
 
 .bg-yellow {

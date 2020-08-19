@@ -15,7 +15,7 @@ const ItemsBox = ({ title }) => {
       <h6 className='text-muted font-weight-bold text-capitalize'>
         Double click any item to add
       </h6>
-      <div className='col col-md-6  flex-fill border border-dark rounded pr-1 py-2 mb-5'>
+      <div className='col col-md-6  flex-fill border border-muted shadow-sm rounded p-0 pb-1'>
         <div className='items-box scroll-box bg-white'>
           <ItemBoxChildren text='Option 2 - text 12334' />
           <ItemBoxChildren text='Option 2 - text 12334' />

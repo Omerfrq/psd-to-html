@@ -11,7 +11,7 @@ import ViewFilesIcon from '../../assets/svgs/view-files.icon';
 const Data = () => {
   return (
     <div className='my-5'>
-      <h2 className='text-center font-weight-bold'>
+      <h2 className='text-center heading-color font-bold'>
         Select A Data Type to Manage
       </h2>
       <Row className='justify-content-around my-5 mx-5'>

@@ -48,7 +48,7 @@ const CreateNew = ({ show, onHide, onSubmit }) => {
               </Form.Label>
               <Form.Control
                 id='inlineFormInputName'
-                className='py-4'
+                className='py-4 border border-dark'
                 placeholder='Enter A Name to Save Results'
               />
             </Col>

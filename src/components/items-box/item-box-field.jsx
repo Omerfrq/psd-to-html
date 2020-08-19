@@ -7,11 +7,18 @@ import CheckBox from '../check-box/check-box';
 
 const ItemBoxField = ({ children }) => {
   return (
-    <Form.Row className='mx-3 align-items-center align-self-baseline mb-3'>
-      <span className='lines mr-2'>|||</span>
+    <Form.Row className='mx-3 flex-nowrap align-items-center align-self-baseline mb-3'>
+      <span
+        style={{
+          letterSpacing: '0.2px',
+        }}
+        className='lines mr-2'
+      >
+        |||
+      </span>
       <Form.Group>
         <span className='item-box-check'>
-          <CheckBox text='Any text 123123' />
+          <CheckBox text='Any text' />
         </span>
       </Form.Group>
       <span className='d-flex mx-2 btn btn-link p-0'>

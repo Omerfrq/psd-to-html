@@ -8,7 +8,7 @@ const CheckBox = ({ text, checked }) => {
         <label className='mb-0'>
           <input type='checkbox' checked={checked} />
           <span className='box'></span>
-          <h4 className='ml-4 mb-0'>{text}</h4>
+          <h4 className='ml-4 mb-0 font-weight-bold'>{text}</h4>
         </label>
       </div>
     </div>

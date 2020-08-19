@@ -43,7 +43,7 @@ const OptionOne = () => {
           <span className='bg-grey-light badge badge-pill text-white p-3 mr-3'>
             <FilesIcon height={30} color='currentColor' />
           </span>
-          <h3>Option 1 Name</h3>
+          <h3 className='font-bold heading-color'>Option 1 Name</h3>
         </Col>
         <Col>
           <Button
