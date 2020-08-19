@@ -16,8 +16,10 @@ const OptionOne = () => {
   const closeCreateNew = () => setShow(false);
   const openCreateNew = () => setShow(true);
 
-  const closeManageExisting = () => setShow(false);
-  const openManageExisting = () => setShow(true);
+  const [showManageExisting, setShowManageExisting] = useState(false);
+
+  const closeManageExisting = () => setShowManageExisting(false);
+  const openManageExisting = () => setShowManageExisting(true);
 
   const [validated, setValidated] = useState(false);
 
@@ -71,7 +73,7 @@ const OptionOne = () => {
         </Col>
       </Row>
       <CreateNew show={show} onHide={closeCreateNew} onSubmit={handleSubmit} />
-      <ManageExisting show={show} onHide={closeManageExisting} />
+      <ManageExisting show={showManageExisting} onHide={closeManageExisting} />
     </>
   );
 };
