@@ -59,7 +59,7 @@ const ItemsBox = ({ title }) => {
             <small className='text-nowrap'>A value must be entered</small>
           </Form.Control.Feedback>
         </Form.Group>
-        <Form.Group as={Col} md='3'>
+        <Form.Group as={Col} md='2'>
           <Form.Control
             isValid
             defaultValue={23}
@@ -121,12 +121,6 @@ const ItemsBox = ({ title }) => {
             <option value='2'>Two</option>
             <option value='3'>Three</option>
           </Form.Control>
-        </Form.Group>
-        <Form.Group as={Col} md='2'>
-          <Form.Control className='rounded' type='number' required />
-          <Form.Control.Feedback type='invalid'>
-            <small className='text-nowrap'>A value must be entered</small>
-          </Form.Control.Feedback>
         </Form.Group>
         <Form.Group as={Col} md='2'>
           <Form.Control className='rounded' type='number' required />

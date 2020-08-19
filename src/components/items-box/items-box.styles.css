@@ -52,5 +52,5 @@
   position: absolute;
   transform: rotate(45deg);
   bottom: -9px;
-  background-color: #ebff00;
+  background-color: #feee3e !important;
 }
