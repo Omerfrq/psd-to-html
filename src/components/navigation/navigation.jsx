@@ -43,7 +43,7 @@ const Navigation = () => {
           <Nav.Item>
             <Nav.Link as={Link} to='/' className='py-3'>
               <div className='icon-box nav-icon-color'>
-                <TempleteIcon color='currentColor' height={25} />
+                <ResultIcon color='currentColor' height={25} />
               </div>
               <div>Manage</div>
               <div>Templates</div>
@@ -52,7 +52,7 @@ const Navigation = () => {
           <Nav.Item>
             <Nav.Link as={Link} to='/' className='py-3'>
               <div className='icon-box nav-icon-color'>
-                <ResultIcon color='currentColor' height={25} />
+                <TempleteIcon color='currentColor' height={25} />
               </div>
               <div>Manage</div>
               <div>Results</div>

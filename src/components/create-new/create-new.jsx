@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Form, Row, Col } from 'react-bootstrap';
 
 // Icons
-import FilesIcon from '../../assets/svgs/files.icon';
+import SubMenu from '../../assets/svgs/subMenu.icon';
 import OptionHeader from '../../components/option-header/option-header';
 import ItemsBox from '../../components/items-box/items-box';
 import Fade from 'react-bootstrap/Fade';
@@ -13,7 +13,7 @@ const CreateNew = ({ show, onSubmit, onHide }) => {
       <div>
         <Form className='p-3 ' onSubmit={onSubmit}>
           <OptionHeader>
-            <FilesIcon height={50} color='currentColor' />
+            <SubMenu height={50} color='currentColor' />
           </OptionHeader>
 
           <Row className='mx-0 justify-content-around'>

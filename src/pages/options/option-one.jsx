@@ -5,7 +5,7 @@ import { Button, Row, Col } from 'react-bootstrap';
 import CheckBox from '../../components/check-box/check-box';
 
 // Icons
-import FilesIcon from '../../assets/svgs/files.icon';
+import SubMenu from '../../assets/svgs/subMenu.icon';
 
 import CreateNew from '../../components/create-new/create-new';
 import ManageExisting from '../../components/manage-existing/manage-existing';
@@ -41,7 +41,7 @@ const OptionOne = () => {
           className='py-5 d-flex align-items-center justify-content-center'
         >
           <span className='bg-grey-light badge badge-pill text-white p-3 mr-3'>
-            <FilesIcon height={30} color='currentColor' />
+            <SubMenu height={30} color='currentColor' />
           </span>
           <h3 className='font-bold heading-color'>Option 1 Name</h3>
         </Col>
@@ -54,7 +54,7 @@ const OptionOne = () => {
           >
             <CheckBox text='create new' checked={show} />
             <span>
-              <FilesIcon height={50} color='currentColor' />
+              <SubMenu height={50} color='currentColor' />
             </span>
           </Button>
         </Col>
@@ -67,7 +67,7 @@ const OptionOne = () => {
           >
             <CheckBox text='Manage Existing' checked={showManageExisting} />
             <span>
-              <FilesIcon height={50} color='currentColor' />
+              <SubMenu height={50} color='currentColor' />
             </span>
           </Button>
         </Col>
