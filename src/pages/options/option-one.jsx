@@ -14,12 +14,12 @@ const OptionOne = () => {
   const [show, setShow] = useState(false);
 
   const closeCreateNew = () => setShow(false);
-  const openCreateNew = () => setShow(true);
+  const openCreateNew = () => setShow((prev) => !prev);
 
   const [showManageExisting, setShowManageExisting] = useState(false);
 
   const closeManageExisting = () => setShowManageExisting(false);
-  const openManageExisting = () => setShowManageExisting(true);
+  const openManageExisting = () => setShowManageExisting((prev) => !prev);
 
   const [validated, setValidated] = useState(false);
 
@@ -50,7 +50,7 @@ const OptionOne = () => {
             block
             variant='link'
             className='border p-3 d-flex align-items-center justify-content-between'
-            onClick={openCreateNew}
+            onClick={() => setShow((prev) => !prev)}
           >
             <CheckBox text='create new' checked={show} />
             <span>

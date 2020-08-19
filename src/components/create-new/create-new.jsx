@@ -1,31 +1,26 @@
 import React from 'react';
-import { Button, Modal, Form, Row, Col } from 'react-bootstrap';
+import { Button, Form, Row, Col } from 'react-bootstrap';
 
 // Icons
 import FilesIcon from '../../assets/svgs/files.icon';
 import OptionHeader from '../../components/option-header/option-header';
 import ItemsBox from '../../components/items-box/items-box';
+import Fade from 'react-bootstrap/Fade';
 
-const CreateNew = ({ show, onHide, onSubmit }) => {
+const CreateNew = ({ show, onSubmit, onHide }) => {
   return (
-    <Modal show={show} onHide={onHide}>
-      <Form
-        className='p-3'
-        // noValidate
-        // validated={validated}
-        onSubmit={onSubmit}
-      >
-        <OptionHeader>
-          <FilesIcon height={50} color='currentColor' />
-        </OptionHeader>
+    <Fade in={show}>
+      <div>
+        <Form className='p-3 ' onSubmit={onSubmit}>
+          <OptionHeader>
+            <FilesIcon height={50} color='currentColor' />
+          </OptionHeader>
 
-        <Modal.Body className='px-0 pb-0'>
           <Row className='mx-0 justify-content-around'>
             <ItemsBox title='left side' />
             <ItemsBox title='Right side' />
           </Row>
-        </Modal.Body>
-        <Modal.Footer>
+
           <Form.Row className='w-100 align-items-center mx-0'>
             <Col sm={2} className='my-1'>
               <Button
@@ -58,9 +53,9 @@ const CreateNew = ({ show, onHide, onSubmit }) => {
               </Button>
             </Col>
           </Form.Row>
-        </Modal.Footer>
-      </Form>
-    </Modal>
+        </Form>
+      </div>
+    </Fade>
   );
 };
 
