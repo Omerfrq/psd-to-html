@@ -52,7 +52,7 @@ const ItemsBox = ({ title }) => {
           <Form.Control
             isInvalid
             className='rounded mt-4'
-            type='number'
+            type='text'
             required
           />
           <Form.Control.Feedback type='invalid'>
@@ -64,7 +64,7 @@ const ItemsBox = ({ title }) => {
             isValid
             defaultValue={23}
             className='rounded '
-            type='number'
+            type='text'
             required
           />
           <Form.Control.Feedback type='invalid'>
@@ -102,7 +102,7 @@ const ItemsBox = ({ title }) => {
           </Form.Control>
         </Form.Group>
         <Form.Group as={Col} xs={5} md={3}>
-          <Form.Control className='rounded' type='number' required />
+          <Form.Control className='rounded' type='text' required />
           <Form.Control.Feedback type='invalid'>
             <small className='text-nowrap'>A value must be entered</small>
           </Form.Control.Feedback>
@@ -123,13 +123,13 @@ const ItemsBox = ({ title }) => {
           </Form.Control>
         </Form.Group>
         <Form.Group as={Col} md='2'>
-          <Form.Control className='rounded' type='number' required />
+          <Form.Control className='rounded' type='text' required />
           <Form.Control.Feedback type='invalid'>
             <small className='text-nowrap'>A value must be entered</small>
           </Form.Control.Feedback>
         </Form.Group>
         <Form.Group as={Col} md='2'>
-          <Form.Control className='rounded' type='number' required />
+          <Form.Control className='rounded' type='text' required />
           <Form.Control.Feedback type='invalid'>
             <small className='text-nowrap'>A value must be entered</small>
           </Form.Control.Feedback>
