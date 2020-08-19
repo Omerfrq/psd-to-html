@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import './App.css';
 
 // Pages
@@ -9,6 +9,7 @@ import Home from './pages/home/home';
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
 import OptionOne from './pages/options/option-one';
+import { Login } from './pages/login/login';
 
 function App() {
   return (
@@ -16,9 +17,10 @@ function App() {
       <Header />
       <Navigation />
       <Switch>
+        <Route exact path='/login' component={Login} />
         <Route exact path='/' component={Home} />
-        <Route path='/data' component={Data} />
-        <Route path='/option-one' component={OptionOne} />
+        <Route exact path='/data' component={Data} />
+        <Route exact path='/option-one' component={OptionOne} />
       </Switch>
       <Footer />
     </div>

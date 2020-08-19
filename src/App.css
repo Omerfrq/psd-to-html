@@ -12,6 +12,10 @@
   font-family: 'Dejavubold' !important;
 }
 
+.bg-dark {
+  background-color: #000 !important;
+}
+
 .close {
   border-radius: 50%;
   background-color: #fbe7e8;
