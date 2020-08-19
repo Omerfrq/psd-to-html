@@ -8,12 +8,16 @@ import CheckBox from '../../components/check-box/check-box';
 import FilesIcon from '../../assets/svgs/files.icon';
 
 import CreateNew from '../../components/create-new/create-new';
+import ManageExisting from '../../components/manage-existing/manage-existing';
 
 const OptionOne = () => {
   const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const closeCreateNew = () => setShow(false);
+  const openCreateNew = () => setShow(true);
+
+  const closeManageExisting = () => setShow(false);
+  const openManageExisting = () => setShow(true);
 
   const [validated, setValidated] = useState(false);
 
@@ -44,7 +48,7 @@ const OptionOne = () => {
             block
             variant='link'
             className='border p-3 d-flex align-items-center justify-content-between'
-            onClick={handleShow}
+            onClick={openCreateNew}
           >
             <CheckBox text='create new' />
             <span>
@@ -57,16 +61,17 @@ const OptionOne = () => {
             block
             variant='link'
             className='border p-3 d-flex align-items-center justify-content-between'
-            onClick={handleShow}
+            onClick={openManageExisting}
           >
-            <CheckBox text='create new' />
+            <CheckBox text='Manage Existing' />
             <span>
               <FilesIcon height={50} color='currentColor' />
             </span>
           </Button>
         </Col>
       </Row>
-      <CreateNew show={show} onHide={handleClose} onSubmit={handleSubmit} />
+      <CreateNew show={show} onHide={closeCreateNew} onSubmit={handleSubmit} />
+      <ManageExisting show={show} onHide={closeManageExisting} />
     </>
   );
 };

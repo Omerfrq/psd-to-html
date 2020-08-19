@@ -44,6 +44,11 @@ body {
   border-color: #eee;
 }
 
+.text-green {
+  color: #28a745 !important;
+  text-decoration: underline;
+}
+
 input[type='checkbox'] {
   background: #3d404e;
   border: #7f83a2 1px solid;
