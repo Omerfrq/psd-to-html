@@ -46,6 +46,20 @@ body {
   margin: 0 auto;
 }
 
+.btn-warning {
+  color: #000;
+  background-color: #fffee2;
+  border-color: #fffee2;
+}
+
+.btn-warning.focus,
+.btn-warning:focus,
+.btn-warning:hover {
+  color: #000;
+  background-color: #feee3e;
+  border-color: #feee3e;
+}
+
 .btn-link {
   color: #000;
 }
