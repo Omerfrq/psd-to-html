@@ -17,6 +17,40 @@
   background: #eee;
 }
 
+.item-box-check .h4,
+.item-box-check h4 {
+  font-size: 0.9rem;
+  margin-left: 0.5rem !important;
+}
+
+.item-box-check .checkbox-fp input[type='checkbox'] + .box:after {
+  width: 19px;
+  height: 19px;
+  border-radius: 3px;
+  top: 8px;
+}
+
+.item-box-check input[type='checkbox']:checked + .box:after {
+  background-color: rgba(28, 187, 14, 0.6) !important;
+  border-color: rgba(28, 187, 14, 0.6) !important;
+}
+
+.item-box-check .checkbox-fp input[type='checkbox']:checked + .box:before {
+  top: 6px;
+  left: 6px;
+  width: 7px;
+  height: 10px;
+}
+
 .lines {
   letter-spacing: -4px;
+}
+
+.arrow-bottom {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  transform: rotate(45deg);
+  bottom: -9px;
+  background-color: #ebff00;
 }

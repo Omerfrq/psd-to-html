@@ -18,8 +18,8 @@ const OptionHeader = ({ children }) => {
         </Button>
       </div>
       <small className='bg-light pb-2'>
-        <div className='bg-grey-light mb-2 py-3'>
-          <span className='px-2'>
+        <div className='bg-grey-light mb-2 py-2'>
+          <span className='px-1'>
             The box Contain for help details when asking options
           </span>
         </div>

@@ -23,9 +23,9 @@
   background-color: #ddd;
   z-index: 1000;
 }
-.checkbox-fp input[type='checkbox']:checked + .box:after {
-  background-color: #1cbb0e;
-  border-color: #1cbb0e;
+input[type='checkbox']:checked + .box:after {
+  background-color: #1cbb0e !important;
+  border-color: #1cbb0e !important;
 }
 .checkbox-fp input[type='checkbox']:checked + .box:before {
   transform: rotate(45deg);

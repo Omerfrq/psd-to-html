@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import './option.styles.css';
-import { Button, Modal, Form, Row, Col } from 'react-bootstrap';
+import { Button, Row, Col } from 'react-bootstrap';
 
 import CheckBox from '../../components/check-box/check-box';
 
 // Icons
 import FilesIcon from '../../assets/svgs/files.icon';
-import OptionHeader from '../../components/option-header/option-header';
-import ItemsBox from '../../components/items-box/items-box';
+
+import CreateNew from '../../components/create-new/create-new';
 
 const OptionOne = () => {
   const [show, setShow] = useState(false);
@@ -66,54 +66,7 @@ const OptionOne = () => {
           </Button>
         </Col>
       </Row>
-      <Modal show={show} onHide={handleClose}>
-        <Form noValidate validated={validated} onSubmit={handleSubmit}>
-          <OptionHeader>
-            <FilesIcon height={50} color='currentColor' />
-          </OptionHeader>
-
-          <Modal.Body className='px-0 pb-0'>
-            <Row className='mx-0 justify-content-around'>
-              <ItemsBox title='left side' />
-              <ItemsBox title='Right side' />
-            </Row>
-          </Modal.Body>
-          <Modal.Footer>
-            <Form.Row className='w-100 align-items-center mx-0'>
-              <Col sm={2} className='my-1'>
-                <Button
-                  block
-                  className='py-3'
-                  variant='secondary'
-                  onClick={handleClose}
-                >
-                  Close
-                </Button>
-              </Col>
-              <Col sm={2} className='my-1'>
-                <Button block className='py-3' variant='secondary' type='reset'>
-                  Reset
-                </Button>
-              </Col>
-              <Col className='my-1'>
-                <Form.Label htmlFor='inlineFormInputName' srOnly>
-                  Name
-                </Form.Label>
-                <Form.Control
-                  id='inlineFormInputName'
-                  className='py-4'
-                  placeholder='Enter A Name to Save Results'
-                />
-              </Col>
-              <Col sm={2} className='my-1'>
-                <Button block className='py-3' variant='dark' type='submit'>
-                  Generate
-                </Button>
-              </Col>
-            </Form.Row>
-          </Modal.Footer>
-        </Form>
-      </Modal>
+      <CreateNew show={show} onHide={handleClose} onSubmit={handleSubmit} />
     </>
   );
 };
