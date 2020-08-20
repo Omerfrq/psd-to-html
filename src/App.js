@@ -14,6 +14,8 @@ import { OptionThree } from './pages/options/option-three';
 import { OptionTwo } from './pages/options/option-two';
 import OptionFour from './pages/options/option-four';
 import OptionFive from './pages/options/option-five';
+import Result from './pages/result/result';
+import ManageTemplates from './pages/templates/template';
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
         <Route exact path='/login' component={Login} />
         <Route exact path='/' component={Home} />
         <Route exact path='/data' component={Data} />
+        <Route exact path='/results' component={Result} />
+        <Route exact path='/manage-templates' component={ManageTemplates} />
         <Route exact path='/data/option-one' component={OptionOne} />
         <Route exact path='/data/option-two' component={OptionTwo} />
         <Route exact path='/data/option-three' component={OptionThree} />

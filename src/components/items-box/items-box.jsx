@@ -29,8 +29,8 @@ const ItemsBox = ({ title }) => {
           <ItemBoxChildren text='Option 2 - text 12334' />
           <ItemBoxChildren text='Option 2 - text 12334' />
           <ItemBoxChildren text='Option 2 - text 12334' />
-          <ItemBoxChildren text='Option 40 - text 12334' />
-          <ItemBoxChildren text='Option 50 - text 12334' />
+          <ItemBoxChildren text='Option 2 - text 12334' />
+          <ItemBoxChildren text='Option 2 - text 12334' />
           <ItemBoxChildren text='Option 2 - text 12334' />
         </div>
       </div>
