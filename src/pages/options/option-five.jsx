@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './option.styles.css';
-import { Button, Row, Col, Nav, Tab } from 'react-bootstrap';
+import { Button, Row, Col } from 'react-bootstrap';
 
 import CheckBox from '../../components/check-box/check-box';
 
@@ -11,7 +11,7 @@ import ManageExisting from '../../components/manage-existing/manage-existing';
 import ToggleView from '../../components/create-new/create-new';
 
 import { OptionOneCreateNew } from '../../components/option-one/index';
-const OptionOne = () => {
+const OptionFive = () => {
   const [show, setShow] = useState(false);
   const [showManageExisting, setShowManageExisting] = useState(false);
 
@@ -39,7 +39,7 @@ const OptionOne = () => {
           <span className='bg-grey-light badge badge-pill text-white p-3 mr-3'>
             <SubMenu height={30} color='currentColor' />
           </span>
-          <h3 className='font-bold heading-color'>Option 1 Name</h3>
+          <h3 className='font-bold heading-color'>Option 5 Name</h3>
         </Col>
         <Col>
           <Button
@@ -68,7 +68,7 @@ const OptionOne = () => {
           </Button>
         </Col>
       </Row>
-      <ToggleView show={show}>{show && <OptionOneCreateNew />}</ToggleView>
+      <ToggleView show={show}>{show && <h1>Option Four</h1>}</ToggleView>
 
       <ToggleView show={showManageExisting}>
         {showManageExisting && <ManageExisting onHide={closeManageExisting} />}
@@ -77,4 +77,4 @@ const OptionOne = () => {
   );
 };
 
-export default OptionOne;
+export default OptionFive;

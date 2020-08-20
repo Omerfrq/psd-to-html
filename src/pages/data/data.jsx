@@ -15,19 +15,19 @@ const Data = () => {
         Select A Data Type to Manage
       </h2>
       <Row className='justify-content-around my-5 mx-5'>
-        <Option text='option 1' to='/option-one'>
+        <Option text='option 1' to='/data/option-one'>
           <FilesIcon height={65} color='currentColor' />
         </Option>
-        <Option text='option 2'>
+        <Option text='option 2' to='/data/option-two'>
           <FilesIcon height={65} color='currentColor' />
         </Option>
-        <Option text='option 3'>
+        <Option text='option 3' to='/data/option-three'>
           <FilesIcon height={65} color='currentColor' />
         </Option>
-        <Option text='option 4'>
+        <Option text='option 4' to='/data/option-four'>
           <FilesIcon height={65} color='currentColor' />
         </Option>
-        <Option text='option 5'>
+        <Option text='option 5' to='/data/option-five'>
           <FilesIcon height={65} color='currentColor' />
         </Option>
       </Row>
