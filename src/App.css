@@ -62,16 +62,45 @@ body {
 
 .btn-warning {
   color: #000;
-  background-color: #eee;
-  border-color: #eee;
+  background-color: rgb(255 235 59 / 39%);
+  border-color: rgb(255 235 59 / 39%);
+}
+
+.btn-warning:hover {
+  color: #000;
+  background-color: rgb(255 235 59 / 77%);
+  border-color: rgb(255 235 59 / 77%);
 }
 
 .btn-warning.focus,
-.btn-warning:focus,
-.btn-warning:hover {
+.btn-warning:focus {
   color: #000;
-  background-color: #feee3e;
-  border-color: #feee3e;
+  background-color: rgb(255 235 59 / 90%);
+  border-color: rgb(255 235 59 / 90%);
+  box-shadow: 0 0 0 0.2rem rgb(255 235 59 / 50%);
+}
+
+.btn-warning:not(:disabled):not(.disabled).active,
+.btn-warning:not(:disabled):not(.disabled):active,
+.show > .btn-warning.dropdown-toggle {
+  color: #000;
+  background-color: rgb(255 235 59 / 30%);
+  border-color: rgb(255 235 59 / 30%);
+}
+
+.btn-light {
+  color: #000;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.btn-light.focus,
+.btn-light:focus,
+.btn-light:not(:disabled):not(.disabled):active,
+.btn-light:hover {
+  color: rgba(0, 0, 0, 0.496);
+  background-color: rgba(238, 238, 238, 0.5);
+  border-color: rgba(238, 238, 238, 0.5);
   box-shadow: unset !important;
 }
 
@@ -100,7 +129,7 @@ body {
 }
 
 .text-green {
-  color: #28a745 !important;
+  color: rgb(100 208 124) !important;
   text-decoration: underline;
 }
 
@@ -117,7 +146,7 @@ input[type='checkbox'] {
   width: 130px;
 }
 
-/* Pagination */
+/* Paginations */
 
 .page-link {
   border-radius: 50%;

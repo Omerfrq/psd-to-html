@@ -2,6 +2,7 @@ import React from 'react';
 import './manage-existing.styles.css';
 import { Button, Form, Table, Col, Pagination } from 'react-bootstrap';
 import TableRow from './table-row';
+import TableHead from './table-head';
 
 const ManageExisting = ({ onHide }) => {
   return (
@@ -10,73 +11,8 @@ const ManageExisting = ({ onHide }) => {
         Manage Existing
       </h2>
 
-      <Table bordered hover responsive>
-        <thead className='bg-light text-black-50 text-uppercase small'>
-          <tr>
-            <th className='position-relative'>
-              <span>row</span>
-              <span className='pos-top d-flex flex-column'>
-                <Button
-                  variant='warning'
-                  size='sm'
-                  className='align-top p-0 bg-muted '
-                >
-                  <h6 className='mb-0 text-muted bg-light'>&times;</h6>
-                </Button>
-                <Button variant='warning' size='sm' className='align-top p-0'>
-                  <small className='mb-0 text-muted bg-light'>▼</small>
-                </Button>
-              </span>
-            </th>
-            <th className='position-relative'>
-              <span>records count</span>
-              <span className='pos-top d-flex flex-column'>
-                <Button variant='warning' size='sm' className='align-top p-0'>
-                  <h6 className='mb-0 text-muted bg-light'>&times;</h6>
-                </Button>
-                <Button variant='warning' size='sm' className='align-top p-0'>
-                  <small className='mb-0 text-muted bg-light'>▼</small>
-                </Button>
-              </span>
-            </th>
-            <th className='position-relative'>
-              <span>saved name</span>
-              <span className='pos-top d-flex flex-column'>
-                <Button variant='warning' size='sm' className='align-top p-0'>
-                  <h6 className='mb-0 text-muted bg-light'>&times;</h6>
-                </Button>
-                <Button variant='warning' size='sm' className='align-top p-0'>
-                  <small className='mb-0 text-muted bg-light'>▼</small>
-                </Button>
-              </span>
-            </th>
-            <th className='position-relative'>
-              <span>created date time</span>
-              <span className='pos-top d-flex flex-column'>
-                <Button variant='warning' size='sm' className='align-top p-0'>
-                  <h6 className='mb-0 text-muted bg-light'>&times;</h6>
-                </Button>
-                <Button variant='warning' size='sm' className='align-top p-0'>
-                  <small className='mb-0 text-muted bg-light'>▼</small>
-                </Button>
-              </span>
-            </th>
-            <th className='position-relative'>
-              <span>last updated date time</span>
-              <span className='pos-top d-flex flex-column'>
-                <Button variant='warning' size='sm' className='align-top p-0'>
-                  <h6 className='mb-0 text-muted bg-light'>&times;</h6>
-                </Button>
-                <Button variant='warning' size='sm' className='align-top p-0'>
-                  <small className='mb-0 text-muted bg-light'>▼</small>
-                </Button>
-              </span>
-            </th>
-            <th>
-              <span>actions</span>
-            </th>
-          </tr>
-        </thead>
+      <Table hover responsive>
+        <TableHead />
         <tbody className='small'>
           <TableRow
             row='1'
