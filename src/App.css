@@ -26,6 +26,14 @@
   font-weight: 600;
 }
 
+.font-small {
+  font-size: 70%;
+}
+
+.text-black-80 {
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+
 .heading-color {
   color: #312d4e !important;
 }
@@ -89,7 +97,7 @@ body {
 }
 
 .btn-light {
-  color: #000;
+  color: rgb(185 185 185);
   background-color: #fff;
   border-color: #fff;
 }
@@ -144,6 +152,28 @@ input[type='checkbox'] {
 
 .w-130px {
   width: 130px;
+}
+
+/* Table  */
+
+.table thead th {
+  padding: 25px 30px;
+}
+
+.table-bordered td,
+.table-bordered th {
+  border-right: 1px solid #dee2e6;
+  border-left: 1px solid #dee2e6;
+  border-top: unset;
+  border-bottom: unset;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: white;
 }
 
 /* Paginations */

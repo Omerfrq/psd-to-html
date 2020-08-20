@@ -11,7 +11,7 @@ const ManageExisting = ({ onHide }) => {
         Manage Existing
       </h2>
 
-      <Table hover responsive>
+      <Table bordered hover responsive striped className='border'>
         <TableHead />
         <tbody className='small'>
           <TableRow
@@ -54,9 +54,9 @@ const ManageExisting = ({ onHide }) => {
 
       <Form.Row className='w-100 align-items-center mx-0'>
         <Col sm={2} className='my-1'>
-          <Form.Group className='d-flex align-items-end'>
+          <Form.Group className='d-flex align-items-center'>
             <Form.Control className='col-3' type='text' value='10' />
-            <Form.Label className='col small font-weight-600 color-heading'>
+            <Form.Label className='col small font-weight-600 mb-0 text-black-50'>
               Rows Per Page
             </Form.Label>
           </Form.Group>
@@ -76,8 +76,8 @@ const ManageExisting = ({ onHide }) => {
         <Col sm={2} className='my-1'>
           <Form.Group className='row mx-0 align-items-center justify-content-end'>
             <Form.Control className='col-3' type='text' />
-            <Form.Label className='col-3'>
-              <Button variant='link' className='p-0'>
+            <Form.Label className='col-3 mb-0'>
+              <Button variant='link' className='p-0 text-black-50'>
                 Go
               </Button>
             </Form.Label>

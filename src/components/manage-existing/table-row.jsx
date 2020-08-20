@@ -9,11 +9,15 @@ const TableRow = ({
   lastUpdatedDatetime,
 }) => {
   return (
-    <tr className='font-weight-600'>
+    <tr className='font-weight-600 text-center'>
       <td>{row}</td>
       <td className='text-green'>{recordsCount}</td>
       <td>
-        <input type='text' value={savedName} className='w-100 py-1 px-2' />
+        <input
+          type='text'
+          value={savedName}
+          className='w-100 border font-weight-600 text-black-80 p-2'
+        />
       </td>
       <td>{createdDatetime}</td>
       <td>{lastUpdatedDatetime}</td>
