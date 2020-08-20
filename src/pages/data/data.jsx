@@ -21,7 +21,7 @@ const Data = () => {
         <Option text='option 2'>
           <FilesIcon height={65} color='currentColor' />
         </Option>
-        <Option text='option 3'>
+        <Option text='option 3' to='/option-three'>
           <FilesIcon height={65} color='currentColor' />
         </Option>
         <Option text='option 4'>

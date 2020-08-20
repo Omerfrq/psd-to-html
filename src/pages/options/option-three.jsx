@@ -6,12 +6,10 @@ import CheckBox from '../../components/check-box/check-box';
 
 // Icons
 import SubMenu from '../../assets/svgs/subMenu.icon';
-
 import ManageExisting from '../../components/manage-existing/manage-existing';
 import ToggleView from '../../components/create-new/create-new';
 
-import { OptionOneCreateNew } from '../../components/option-one/index';
-const OptionOne = () => {
+export const OptionThree = () => {
   const [show, setShow] = useState(false);
   const [showManageExisting, setShowManageExisting] = useState(false);
 
@@ -39,7 +37,7 @@ const OptionOne = () => {
           <span className='bg-grey-light badge badge-pill text-white p-3 mr-3'>
             <SubMenu height={30} color='currentColor' />
           </span>
-          <h3 className='font-bold heading-color'>Option 1 Name</h3>
+          <h3 className='font-bold heading-color'>Option 3 Name</h3>
         </Col>
         <Col>
           <Button
@@ -68,7 +66,7 @@ const OptionOne = () => {
           </Button>
         </Col>
       </Row>
-      <ToggleView show={show}>{show && <OptionOneCreateNew />}</ToggleView>
+      <ToggleView show={show}>{show && <h1>Option 3 Component</h1>}</ToggleView>
 
       <ToggleView show={showManageExisting}>
         {showManageExisting && <ManageExisting onHide={closeManageExisting} />}
@@ -76,5 +74,3 @@ const OptionOne = () => {
     </>
   );
 };
-
-export default OptionOne;

@@ -10,6 +10,7 @@ import Header from './components/header/header';
 import Footer from './components/footer/footer';
 import OptionOne from './pages/options/option-one';
 import { Login } from './pages/login/login';
+import { OptionThree } from './pages/options/option-three';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route exact path='/' component={Home} />
         <Route exact path='/data' component={Data} />
         <Route exact path='/option-one' component={OptionOne} />
+        <Route exact path='/option-three' component={OptionThree} />
       </Switch>
       <Footer />
     </div>
