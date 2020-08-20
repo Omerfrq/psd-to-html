@@ -20,6 +20,7 @@ const Header = () => {
           <Navbar.Brand>
             <Nav.Link className='icon-box header-icon-color p-0'>
               <BarsIcon color='#ebff00' height={20} />
+              <span className='arrow-bottom-black'></span>
             </Nav.Link>
           </Navbar.Brand>
           <marquee direction='right' behavior='scroll'>

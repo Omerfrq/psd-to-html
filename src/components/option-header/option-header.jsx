@@ -17,7 +17,7 @@ const OptionHeader = ({ children }) => {
             0 items selected
           </h6>
         </div>
-        <Button className='ml-4 p-3 border-0 text-white bg-custom-success'>
+        <Button variant='success' className='ml-4 p-3 border-0'>
           {children}
         </Button>
       </div>

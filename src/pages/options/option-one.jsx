@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './option.styles.css';
-import { Button, Row, Col } from 'react-bootstrap';
+import { Button, Row, Col, Nav, Tab } from 'react-bootstrap';
 
 import CheckBox from '../../components/check-box/check-box';
 
@@ -51,6 +51,7 @@ const OptionOne = () => {
             variant='link'
             className='border p-3 d-flex align-items-center justify-content-between'
             onClick={() => setShow((prev) => !prev)}
+            aria-expanded={show}
           >
             <CheckBox text='create new' checked={show} />
             <span>
@@ -63,7 +64,7 @@ const OptionOne = () => {
             block
             variant='link'
             className='border p-3 d-flex align-items-center justify-content-between'
-            onClick={openManageExisting}
+            onClick={() => setShowManageExisting((prev) => !prev)}
           >
             <CheckBox text='Manage Existing' checked={showManageExisting} />
             <span>
@@ -72,8 +73,17 @@ const OptionOne = () => {
           </Button>
         </Col>
       </Row>
-      <CreateNew show={show} onHide={closeCreateNew} onSubmit={handleSubmit} />
-      <ManageExisting show={showManageExisting} onHide={closeManageExisting} />
+      <div>
+        <CreateNew
+          show={show}
+          onHide={closeCreateNew}
+          onSubmit={handleSubmit}
+        />
+        <ManageExisting
+          showManageExisting={showManageExisting}
+          onHide={closeManageExisting}
+        />
+      </div>
     </>
   );
 };

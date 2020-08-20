@@ -1,16 +1,22 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 
-const TableRow = () => {
+const TableRow = ({
+  row,
+  recordsCount,
+  savedName,
+  createdDatetime,
+  lastUpdatedDatetime,
+}) => {
   return (
     <tr className='font-weight-600'>
-      <td>1</td>
-      <td className='text-green'>1234</td>
+      <td>{row}</td>
+      <td className='text-green'>{recordsCount}</td>
       <td>
-        <input type='text' value='Sample 1234' className='w-100 py-1 px-2' />
+        <input type='text' value={savedName} className='w-100 py-1 px-2' />
       </td>
-      <td>01/01/2000 9:35AM</td>
-      <td>01/01/2000 9:35AM</td>
+      <td>{createdDatetime}</td>
+      <td>{lastUpdatedDatetime}</td>
       <td>
         <span className='d-flex justify-content-between align-items-center'>
           <Button
@@ -20,9 +26,9 @@ const TableRow = () => {
           >
             Click to view/update
           </Button>
-          <div className='close'>
+          <Button variant='btn-link' className='close'>
             <small className='text-danger'>&times;</small>
-          </div>
+          </Button>
         </span>
       </td>
     </tr>

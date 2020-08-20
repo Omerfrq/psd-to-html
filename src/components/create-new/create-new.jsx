@@ -1,15 +1,14 @@
 import React from 'react';
-import { Button, Form, Row, Col } from 'react-bootstrap';
+import { Button, Form, Row, Col, Collapse } from 'react-bootstrap';
 
 // Icons
 import SubMenu from '../../assets/svgs/subMenu.icon';
 import OptionHeader from '../../components/option-header/option-header';
 import ItemsBox from '../../components/items-box/items-box';
-import Fade from 'react-bootstrap/Fade';
 
 const CreateNew = ({ show, onSubmit, onHide }) => {
   return (
-    <Fade in={show}>
+    <Collapse in={show}>
       <div>
         <Form className='p-3 ' onSubmit={onSubmit}>
           <OptionHeader>
@@ -55,7 +54,7 @@ const CreateNew = ({ show, onSubmit, onHide }) => {
           </Form.Row>
         </Form>
       </div>
-    </Fade>
+    </Collapse>
   );
 };
 
