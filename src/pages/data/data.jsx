@@ -8,7 +8,7 @@ import FilesIcon from '../../assets/svgs/files.icon';
 
 const Data = () => {
   return (
-    <div className='my-5'>
+    <div className='my-5 container'>
       <h2 className='text-center heading-color font-bold'>
         Select A Data Type to Manage
       </h2>
