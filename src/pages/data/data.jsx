@@ -5,12 +5,10 @@ import './data.styles.css';
 
 // Icons
 import FilesIcon from '../../assets/svgs/files.icon';
-import KeywordIcon from '../../assets/svgs/keyword.icon';
-import ViewFilesIcon from '../../assets/svgs/view-files.icon';
 
 const Data = () => {
   return (
-    <div className='my-5'>
+    <div className='my-5 container'>
       <h2 className='text-center heading-color font-bold'>
         Select A Data Type to Manage
       </h2>

@@ -10,9 +10,9 @@ const Option = ({ text, to, children }) => {
       as={Link}
       to={to}
       xs={8}
-      sm={3}
+      sm={4}
       lg={2}
-      className='option-link  text-center border border-muted py-4 mb-4 mb-lg-0 mr-2 mr-lg-0'
+      className='option-link p-0 text-center border border-muted py-5 mb-4 mb-lg-0 mr-2 mr-lg-0'
     >
       {children}
       <h5 className='text-capitalize heading-color font-bold mt-3'>{text}</h5>

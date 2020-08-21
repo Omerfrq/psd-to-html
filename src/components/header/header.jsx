@@ -23,7 +23,7 @@ const Header = () => {
               <span className='arrow-bottom-black'></span>
             </Nav.Link>
           </Navbar.Brand>
-          <marquee direction='right' behavior='scroll'>
+          <marquee direction='left' behavior='scroll'>
             This is a sample scrolling text that has scrolls texts to right.
           </marquee>
           <Nav className='align-items-center'>

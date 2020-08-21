@@ -17,13 +17,9 @@ const Navigation = () => {
   return (
     <>
       {!isLogin && (
-        <Nav
-          className='navigation-menu bg-yellow justify-content-around'
-          activeKey='/data'
-          //   onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
-        >
+        <Nav className='navigation-menu bg-yellow justify-content-around '>
           <Nav.Item>
-            <Nav.Link as={Link} to='/' className='py-3'>
+            <Nav.Link as={Link} to='/' className='py-4'>
               <div className='icon-box nav-icon-color'>
                 <AccountIcon color='currentColor' height={25} />
               </div>
@@ -32,7 +28,7 @@ const Navigation = () => {
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link as={Link} to='/data' className='py-3'>
+            <Nav.Link as={Link} to='/data' className='py-4'>
               <div className='icon-box nav-icon-color'>
                 <DataIcon color='currentColor' height={25} />
               </div>
@@ -41,7 +37,7 @@ const Navigation = () => {
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link as={Link} to='/' className='py-3'>
+            <Nav.Link as={Link} to='/manage-templates' className='py-4'>
               <div className='icon-box nav-icon-color'>
                 <ResultIcon color='currentColor' height={25} />
               </div>
@@ -50,7 +46,7 @@ const Navigation = () => {
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link as={Link} to='/' className='py-3'>
+            <Nav.Link as={Link} to='/results' className='py-4'>
               <div className='icon-box nav-icon-color'>
                 <TempleteIcon color='currentColor' height={25} />
               </div>
@@ -59,7 +55,7 @@ const Navigation = () => {
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link as={Link} to='/' className='py-3'>
+            <Nav.Link as={Link} to='/' className='py-4'>
               <div className='icon-box nav-icon-color'>
                 <AlertIcon color='currentColor' height={25} />
               </div>
