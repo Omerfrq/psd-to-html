@@ -15,8 +15,8 @@ export const OptionTwo = () => {
           </div>
           <Tab.Container defaultActiveKey='#link1'>
             <Row className='nk-list-container mx-0 p-3 border border-dark vh-100 overflow-auto scroll-box'>
-              <Col sm={3} className='h-100 p-0 pb-3 '>
-                <ListGroup className='px-3 mr-5 bg-grey-light rounded-lg '>
+              <Col sm={3} className='h-100 p-0 pb-3  mr-5 '>
+                <ListGroup className='px-3 bg-grey-light rounded-lg '>
                   <ListItem listKey='#link1' name='Item 1' />
                   <ListItem listKey='#link2' name='Item 2' />
                   <ListItem listKey='#link3' name='Item 3' />
