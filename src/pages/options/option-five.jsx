@@ -11,6 +11,7 @@ import ManageExisting from '../../components/manage-existing/manage-existing';
 import ToggleView from '../../components/create-new/create-new';
 
 import { OptionOneCreateNew } from '../../components/option-one/index';
+import OptionTitle from '../../components/option/option-title';
 const OptionFive = () => {
   const [show, setShow] = useState(false);
   const [showManageExisting, setShowManageExisting] = useState(false);
@@ -32,15 +33,7 @@ const OptionFive = () => {
   return (
     <>
       <Row className='mx-0'>
-        <Col
-          md={12}
-          className='py-5 d-flex align-items-center justify-content-center'
-        >
-          <span className='bg-grey-light badge badge-pill text-white p-3 mr-3'>
-            <SubMenu height={30} color='currentColor' />
-          </span>
-          <h3 className='font-bold heading-color'>Option 5 Name</h3>
-        </Col>
+        <OptionTitle title='Option 5 Name' />
         <Col>
           <Button
             block

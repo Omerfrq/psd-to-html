@@ -8,6 +8,7 @@ import CheckBox from '../../components/check-box/check-box';
 import SubMenu from '../../assets/svgs/subMenu.icon';
 import ManageExisting from '../../components/manage-existing/manage-existing';
 import ToggleView from '../../components/create-new/create-new';
+import OptionTitle from '../../components/option/option-title';
 
 export const OptionThree = () => {
   const [show, setShow] = useState(false);
@@ -30,15 +31,7 @@ export const OptionThree = () => {
   return (
     <>
       <Row className='mx-0'>
-        <Col
-          md={12}
-          className='py-5 d-flex align-items-center justify-content-center'
-        >
-          <span className='bg-grey-light badge badge-pill text-white p-3 mr-3'>
-            <SubMenu height={30} color='currentColor' />
-          </span>
-          <h3 className='font-bold heading-color'>Option 3 Name</h3>
-        </Col>
+        <OptionTitle title='Option 3 Name' />
         <Col>
           <Button
             block
